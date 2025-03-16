@@ -15,6 +15,10 @@ function App() {
     /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+/;
 
   useEffect(() => {
+    if (!process.env.REACT_APP_API_KEY) {
+      console.error('API key is missing');
+      return;
+    }
     try {
       const getInitialData = async () => {
         const response = await fetch(
@@ -137,10 +141,13 @@ function App() {
                 zoom={13}
                 scrollWheelZoom={true}
                 style={{ 
-                  height: "700px", 
-                  width: "100vw",
-                  position: "relative",
-                  zIndex: 1
+                  height: "calc(100vh - 280px)", 
+                  width: "100%",
+                  position: "absolute",
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  zIndex: 1 
                 }}
               >
                 <TileLayer
