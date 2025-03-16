@@ -39,6 +39,11 @@ REACT_APP_API_KEY=your_ipify_api_key
 npm start
 ```
 
+## Environment Setup
+
+1. Copy `.env.example` to `.env`
+2. Replace `your_ipify_api_key_here` with your actual API key from [ipify](https://geo.ipify.org/)
+
 ## Usage
 
 Enter an IP address or domain in the search bar and press enter to see its location on the map.
