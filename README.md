@@ -42,7 +42,7 @@ npm start
 ## Environment Setup
 
 1. Copy `.env.example` to `.env`
-2. Replace `your_ipify_api_key_here` with your actual API key from [ipify](https://geo.ipify.org/)
+2. Replace REACT_APP_API_KEY=at_grHvnafIWt8pPGuBxnG7VkZjlfMtK with your actual API key from [ipify](https://geo.ipify.org/)
 
 ## Usage
 
