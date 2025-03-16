@@ -1,4 +1,47 @@
-# Frontend Mentor - IP address tracker
+# IP Address Tracker
+
+A web application that allows users to track and visualize IP addresses and domains on an interactive map.
+
+## Features
+
+- IP address and domain lookup
+- Interactive map visualization
+- Real-time location display
+- Responsive design
+
+## Technologies Used
+
+- React
+- Tailwind CSS
+- Leaflet Maps
+- IP Geolocation API
+
+## Setup
+
+1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/ip-address-tracker.git
+```
+
+2. Install dependencies
+```bash
+cd ip-address-tracker
+npm install
+```
+
+3. Create `.env` file and add your API key
+```
+REACT_APP_API_KEY=your_ipify_api_key
+```
+
+4. Start the development server
+```bash
+npm start
+```
+
+## Usage
+
+Enter an IP address or domain in the search bar and press enter to see its location on the map.
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 

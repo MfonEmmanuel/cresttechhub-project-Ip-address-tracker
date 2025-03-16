@@ -14,8 +14,6 @@ function App() {
   const checkDomain =
     /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+/;
 
-  
-
   useEffect(() => {
     try {
       const getInitialData = async () => {
@@ -49,7 +47,7 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault();
     getEnteredAddress();
-    setIpAddress("")
+    setIpAddress("");
   }
 
   return (
@@ -85,13 +83,6 @@ function App() {
                 <img src={arrow} alt="search" />
               </button>
             </form>
-            {/* <button
-              onClick={getCurrentLocation}
-              disabled={loading}
-              className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
-            >
-              {loading ? "Getting Location..." : "Use My Location"}
-            </button> */}
           </div>
         </article>
 
@@ -106,7 +97,7 @@ function App() {
                   IP Address
                 </h2>
                 <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl">
-                  {address?.ip || 'N/A'}
+                  {address?.ip || "N/A"}
                 </p>
               </div>
 
@@ -115,8 +106,9 @@ function App() {
                   Location
                 </h2>
                 <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl">
-                  {address?.location?.city || 'N/A'}, {address?.location?.region || ''}{" "}
-                  {address?.location?.postalCode || ''}
+                  {address?.location?.city || "N/A"},{" "}
+                  {address?.location?.region || ""}{" "}
+                  {address?.location?.postalCode || ""}
                 </p>
               </div>
 
@@ -125,7 +117,7 @@ function App() {
                   Timezone
                 </h2>
                 <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl">
-                  UTC {address?.location?.timezone || 'N/A'}
+                  UTC {address?.location?.timezone || "N/A"}
                 </p>
               </div>
 
@@ -134,7 +126,7 @@ function App() {
                   ISP
                 </h2>
                 <p className="font-semibold text-slate-900 text-lg md:text-xl xl:text-2xl">
-                  {address?.isp || 'N/A'}
+                  {address?.isp || "N/A"}
                 </p>
               </div>
             </article>
