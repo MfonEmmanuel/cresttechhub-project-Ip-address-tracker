@@ -41,8 +41,17 @@ npm start
 
 ## Environment Setup
 
-1. Copy `.env.example` to `.env`
-2. Replace REACT_APP_API_KEY=at_grHvnafIWt8pPGuBxnG7VkZjlfMtK with your actual API key from [ipify](https://geo.ipify.org/)
+1. Sign up for a free API key at [ipify](https://geo.ipify.org/)
+2. Copy `.env.example` to `.env`
+3. Add your API key to the `.env` file:
+```plaintext
+REACT_APP_API_KEY=your_ipify_api_key_here
+```
+
+⚠️ **IMPORTANT**: 
+- Never commit your actual API key to version control
+- Keep your `.env` file private
+- Only use the free tier of ipify (no credit card required)
 
 ## Usage
 
